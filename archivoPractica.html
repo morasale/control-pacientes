@@ -9,11 +9,13 @@
 <body>
     <h1>Registro para historial de pacientes</h1>
 
-    <input type="text" placeholder="Nombres" class="nombres">
-    <input type="text" placeholder="Apellidos" class="apellidos">
-    <input type="text" placeholder="Cedula de identidad" class="cedula">
-    <input type="text" placeholder="Edad" class="edad">
-    <input type="text" placeholder="Lugar de residencia" class="direccion">
+    <input onchange="leerInput()" type="text" placeholder="Nombres" class="nombres">
+    <input onchange="leerInput()" type="text" placeholder="Apellidos" class="apellidos">
+    <input onchange="leerInput()" type="text" placeholder="Cedula de identidad" class="cedula">
+    <input onchange="leerInput()" type="text" placeholder="Edad" class="edad">
+    <input onchange="leerInput()" type="text" placeholder="Lugar de residencia" class="direccion">
+
+    <button id="siguiente" onclick="escucharEvento()">Siguiente</button>
 
 </body>
 </html>
