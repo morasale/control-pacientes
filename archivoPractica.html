@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./archivoPractica.js"></script>
+    
 </head>
 <body>
     <h1>Registro para historial de pacientes</h1>
 
-    <input onchange="leerInput()" type="text" placeholder="Nombres" class="nombres">
-    <input onchange="leerInput()" type="text" placeholder="Apellidos" class="apellidos">
-    <input onchange="leerInput()" type="text" placeholder="Cedula de identidad" class="cedula">
-    <input onchange="leerInput()" type="text" placeholder="Edad" class="edad">
-    <input onchange="leerInput()" type="text" placeholder="Lugar de residencia" class="direccion">
+    <input type="text" id="nombres" placeholder="Nombres" >
+    <input type="text" id="apellidos" placeholder="Apellidos" >
+    <input type="text" id="cedula" placeholder="Cedula de identidad" >
+    <input type="text" id="edad" placeholder="Edad" >
+    <input type="text" id="direccion" placeholder="Lugar de residencia" >
+
 
     <button id="siguiente" onclick="escucharEvento()">Siguiente</button>
+    <p id="datosCompletos"> </p>
+   
 
+    
+    <script src="./archivoPractica.js"></script>
 </body>
 </html>
